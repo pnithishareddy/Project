@@ -1,23 +1,29 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Header() {
+export default function Header() {
   return (
-    <header className="header">
-     
-<h1 className="logo">
-  <Link to="/">Anjali Homeo Stores</Link>
-</h1>
+    <header className="site-header">
+      <div className="header-brand">
+        <h1>Anjali Homeo Stores</h1>
+      </div>
 
-      <nav className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/services">Services</Link>
-<Link to="/contact">Contact Us</Link>
-
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Signup</Link>
+      <nav className="site-nav">
+        <NavLink to="/" className="nav-link">
+          Home
+        </NavLink>
+        <NavLink to="/services" className="nav-link">
+          Services
+        </NavLink>
+        <NavLink to="/contact" className="nav-link">
+          Contact Us
+        </NavLink>
+        <NavLink to="/login" className="nav-link">
+          Login
+        </NavLink>
+        <NavLink to="/signup" className="nav-link signup-link">
+          Signup
+        </NavLink>
       </nav>
     </header>
   );
 }
-
-export default Header;
