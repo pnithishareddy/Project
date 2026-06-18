@@ -11,16 +11,16 @@ export default function Header() {
         <NavLink to="/" className="nav-link">
           Home
         </NavLink>
-        <NavLink to="/services" className="nav-link">
+        <NavLink to="/Services" className="nav-link">
           Services
         </NavLink>
-        <NavLink to="/contact" className="nav-link">
+        <NavLink to="/Contact" className="nav-link">
           Contact Us
         </NavLink>
-        <NavLink to="/login" className="nav-link">
+        <NavLink to="/Login" className="nav-link">
           Login
         </NavLink>
-        <NavLink to="/signup" className="nav-link signup-link">
+        <NavLink to="/Signup" className="nav-link">
           Signup
         </NavLink>
       </nav>
